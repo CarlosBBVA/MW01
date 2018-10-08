@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+</head>
+    <link rel="stylesheet" href="css/main.css">
+<body>
+
+<div class="container">   
+    <div class="col-5 marg-t104px">
+        <div class="input-cont">
+          <input type="text" class="input-text" id="name" onblur="isfilled(this.value, this)">
+          <label class="input-label" for="name">Nombre</label>
+        </div>
+    </div>
+    <div class="col-7 marg-t104px">
+    <div class="input-cont">
+          <input type="text" class="input-text" id="name" onblur="isfilled(this.value, this)">
+          <label class="input-label" for="name">Nombre</label>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+
+
+    
+function isfilled(val, elm) {
+  if(val.length > 1){
+      elm.parentNode.classList.add("filled");
+     }else{
+      elm.parentNode.classList.remove("filled"); 
+     }
+}
+</script>
+ 
+
+
+
+
+</body>
+</html>

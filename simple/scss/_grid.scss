@@ -1,0 +1,68 @@
+// #metrics
+$Gutters: 16px;
+$gridsize: 12;
+$breakpoints: ("sm":600px, "md": 992px, "lg": 1280px, );
+
+//breakpoints
+
+html{box-sizing: border-box}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.row
+  {margin-left: -1*$Gutters;
+  margin-right: -1*$Gutters;
+}
+[class*="col-"] {
+  display: inline;
+  vertical-align:baseline;
+  padding-left: $Gutters;
+  padding-right: $Gutters;
+  float: left;
+  position: relative;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+//default styles
+@for $i from 1 through $gridsize{
+    .col-#{$i} {width:  ( $i /$gridsize ) *100%};
+}
+
+//now the breakpoints
+@each $slug, $size in $breakpoints{
+    @media (max-width: #{$size}){
+        @for $i from 1 through $gridsize{
+            .col-#{$slug}-#{$i} {width:  ( $i /$gridsize ) *100% }
+        }
+    }
+}
+
+//and finally some demo styles
+.clear-fix{
+  clear: both;
+}
+
+.gutters-rem{ padding-left: 1rem;
+  padding-right: 1rem;}
+.no-gutters{ padding-left: 0px;
+  padding-right: 0px;}

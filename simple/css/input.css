@@ -1,0 +1,27 @@
+.input-cont {
+  width: 100%;
+  padding: 50px 0px 8px 16px;
+  margin: 0px auto;
+  background-color: #F4F4F4;
+  border-radius: 0px;
+  float: left;
+  border-bottom: solid 1px #121212; }
+  .input-cont .input-label {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #999;
+    z-index: 1;
+    transition: transform 150ms ease-out, font-size 150ms ease-out; }
+  .input-cont .input-text {
+    position: absolute;
+    z-index: 0;
+    height: 30px;
+    margin: 0px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    padding: 0px; }
+
+.input-cont:hover {
+  border: solid 1px #121212; }

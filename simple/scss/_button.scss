@@ -1,0 +1,52 @@
+
+.container-btn{
+ background: $blue-regular; width: 90%; position: relative; z-index: -2;
+}
+
+/* GENERAL BUTTON STYLING */
+.btn-primary,
+.btn-primary::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-primary {
+  background: none;
+  border: none;
+  border-radius: 5px;
+  color: $white;
+  display: block;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em 2em;
+  position: relative;
+}
+
+.btn-primary::before,
+.btn-primary::after {
+  background: $blue-dark;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.btn-primary:hover {
+  color: $white;
+}
+
+
+/* BUTTON 2 */
+.btn-hover::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.btn-hover:hover:after {
+  width: 100%;
+}

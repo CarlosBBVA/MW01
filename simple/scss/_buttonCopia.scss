@@ -1,0 +1,47 @@
+.container-btn{
+    display: block;  position: relative; width: auto; background-color: $blue-regular;
+}
+
+.btn-primary,
+.btn-primary::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-primary {
+  background: none;
+  border: none;
+  color: #fff;
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 1.3em 2.5em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.btn-primary::before,
+.btn-primary::after {
+  background: $blue-dark;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.btn-primary:hover {
+  color: $white;
+}
+
+.btn-primary::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.btn-primary:hover:after {
+  width: 100%;
+}

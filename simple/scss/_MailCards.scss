@@ -1,0 +1,17 @@
+a.mail-card{
+    display: block; 
+    float: left; 
+    position: relative; 
+    width: 100%;
+    border: solid 1px $dark-Gray; 
+    font: $book; 
+    padding: 3rem;
+    height: 28.12rem;
+    &:hover{
+        background-color: #F4F4F4;
+    }
+        p { 
+        font: book; 
+        font-weight: 300;
+    }
+}

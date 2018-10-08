@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'Benton Sans book';
+	src: url('../fonts/BentonSansBBVA-Book.eot');
+	src: url('../fonts/BentonSansBBVA-Book.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BentonSansBBVA-Book.woff') format('woff'),
+		url('../fonts/BentonSansBBVA-Book.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Benton Sans Bold';
+	src: url('../fonts/BentonSansBBVA-Bold.eot');
+	src: url('../fonts/BentonSansBBVA-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BentonSansBBVA-Bold.woff') format('woff'),
+		url('../fonts/BentonSansBBVA-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Benton Sans Medium';
+	src: url('../fonts/BentonSansBBVA-Medium.eot');
+	src: url('../fonts/BentonSansBBVA-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BentonSansBBVA-Medium.woff') format('woff'),
+		url('../fonts/BentonSansBBVA-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Icon Coronita';
+  src:  url('../fonts/icomoon.eot?3f1grq');
+  src:  url('../fonts/icomoon.eot?3f1grq#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?3f1grq') format('truetype'),
+    url('../fonts/icomoon.woff?3f1grq') format('woff'),
+    url('../fonts/icomoon.svg?3f1grq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6{ margin: 0px; line-height: 1em; font-weight: 300; color:$black;}
+h1{ font-size: 3rem; font-family:$book; }
+h2{ font-size: 2.5rem; font-family:$book;}
+h3{ font-size: 2rem; font-family:$book;}
+h4{ font-size: 2rem; font-family:$medium; color: $blue-darkest; }
+h5{ font-size: 2rem;  font-family:$medium;}
+h6{ font-size: 1.5rem;  font-family:$medium; color: $blue-darkest;}
+p{margin: .5em 0px; line-height: 1.2rem;  font-size:2rem; font-family:$book; color:$black; line-height: 3rem; }
+
+
+.bold, strong{  font-family:$medium}
+.normal{ font-family:$book}
+.medium{ font-family:$medium}
+.type-blue, .icon-blue{ color: $blue-regular;}
+.type-red, .icon-red{ color: $red;}
+.text-center{ text-align: center;}
+.text-left{ text-align: left;}
+.text-right{ text-align: right;}
+.capitalize{text-transform: uppercase;}
